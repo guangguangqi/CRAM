@@ -16,28 +16,28 @@ Follow this exact 4-step sequence to build the decoupled analysis environment, d
 ### Step 1: Build the Docker Environment
 Compile the isolated container environment layer utilizing the reproducible Micromamba package framework.
 ```bash
-chmod +x ./dockin
+chmod +x dockin
 ./dockin
 ```
 
 ### Step 2: Download the Datasets and Reference Indices
 Execute the automated dataset capture utility. This pulls down the heavy dataset components from cloud storage directly to your host disk and dynamically fires up a micro-container to execute reference genome indexing (`samtools faidx`) instantly.
 ```bash
-chmod +x ./download_data.sh
+chmod +x download_data.sh
 ./download_data.sh
 ```
 
 ### Step 3: Execute the Core Analytics Pipeline
 Launch the production analysis orchestration framework. This mounts your local data workspace into the container, analyzes depth matrices, isolates core human chromosomes (`chr1-22, X, Y`), and saves the polished deliverables directly to your host machine's output partition.
 ```bash
-chmod +x ./dockrun
+chmod +x dockrun
 ./dockrun
 ```
 
 ### Step 4: Run the Automated Pytest Verification Suite
 Verify the structural integrity of your output metrics using the decoupled automated validation harness. This runs a series of strict Pytest data assertions and exports a telemetry score ledger directly to your local file logs.
 ```bash
-chmod +x ./docktest
+chmod +x docktest
 ./docktest
 ```
 

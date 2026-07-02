@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # 1. Create a local data folder on your host machine
-#mkdir -p data
+mkdir -p data
 cd data
 
 echo "[INFO] Commencing file downloads to local host..."

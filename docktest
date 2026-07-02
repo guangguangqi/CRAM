@@ -1,0 +1,9 @@
+docker run --rm \
+  -v "$(pwd)/data:/workspace/data" \
+  -v "$(pwd)/output:/workspace/output" \
+  -v "$(pwd)/tests:/tests" \
+  -v "$(pwd)/logs:/logs/verifier" \
+  cram-pipeline:latest \
+  /tests/test.sh
+
+

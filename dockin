@@ -1,0 +1,3 @@
+DOCKER_BUILDKIT=0 docker build -t cram-pipeline:latest -f ./environment/Dockerfile ./
+
+

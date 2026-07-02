@@ -1,0 +1,5 @@
+docker run \
+  -v "$(pwd)/data:/workspace/data" \
+  -v "$(pwd)/output:/workspace/output" \
+  cram-pipeline:latest
+

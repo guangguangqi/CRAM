@@ -1,0 +1,12 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.15, pytest-8.2.2, pluggy-1.6.0 -- /opt/conda/bin/python3
+cachedir: .pytest_cache
+rootdir: /tests
+collecting ... collected 4 items
+
+../tests/test_outputs.py::test_pipeline_files_exist PASSED               [ 25%]
+../tests/test_outputs.py::test_pipeline_raw_report PASSED                [ 50%]
+../tests/test_outputs.py::test_pipeline_filtered_report PASSED           [ 75%]
+../tests/test_outputs.py::test_pipeline_visualization_plot PASSED        [100%]
+
+============================== 4 passed in 1.13s ===============================
